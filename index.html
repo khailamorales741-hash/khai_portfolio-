@@ -52,64 +52,38 @@
 
     <main id="main">
       <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="kicker">Frontend Developer • UI Engineer</p>
-            <h1 class="hero-title">
-              I build fast, accessible, responsive web experiences.
-            </h1>
-            <p class="hero-subtitle">
-              Portfolio template you can customize in minutes: update your name,
-              links, and projects—done.
-            </p>
-
-            <div class="hero-cta">
-              <a class="button button-primary" href="#projects">View projects</a>
-              <a class="button button-ghost" href="#contact">Contact</a>
-            </div>
-
-            <div class="hero-meta">
-              <a class="chip" href="#" aria-label="Open GitHub profile">
-                GitHub
-              </a>
-              <a class="chip" href="#" aria-label="Open LinkedIn profile">
-                LinkedIn
-              </a>
-              <a class="chip" href="#" aria-label="Download resume">
-                Resume
-              </a>
-            </div>
+        <div class="container hero-split">
+          <div class="hero-photo">
+            <img
+              id="profilePhoto"
+              src="./assets/khaila_profile.JPG"
+              alt="Khaila Camille Morales"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="hero-photo-fallback" aria-hidden="true">KCM</span>
           </div>
 
-          <div class="hero-card" aria-label="Profile card">
-            <div class="avatar">
-              <img
-                id="profilePhoto"
-                src="./assets/khaila_profile.JPG"
-                alt="Khaila Camille Morales"
-                loading="lazy"
-                decoding="async"
-              />
-              <span class="avatar-fallback" aria-hidden="true">KCM</span>
+          <div class="hero-copy">
+            <p class="hero-hello">Hello</p>
+            <h1 class="hero-title">I'm Khaila Camille Morales</h1>
+            <p class="hero-subtitle">
+              A bit about me: I build clean, responsive websites and web
+              experiences with attention to design, accessibility, and
+              performance.
+            </p>
+
+            <div class="hero-actions" aria-label="Quick links">
+              <a class="hero-pill hero-pill--resume" href="#" aria-label="Open resume">
+                Resume
+              </a>
+              <a class="hero-pill hero-pill--work" href="#projects" aria-label="See my work">
+                Work
+              </a>
+              <a class="hero-pill hero-pill--contact" href="#contact" aria-label="Contact me">
+                Contact
+              </a>
             </div>
-            <div>
-              <p class="card-name">Khaila Camille Morales</p>
-              <p class="card-role">Building websites & apps</p>
-            </div>
-            <dl class="card-stats" aria-label="Quick stats">
-              <div class="stat">
-                <dt>Focus</dt>
-                <dd>UI + DX</dd>
-              </div>
-              <div class="stat">
-                <dt>Tools</dt>
-                <dd>React, TS</dd>
-              </div>
-              <div class="stat">
-                <dt>Location</dt>
-                <dd>Remote</dd>
-              </div>
-            </dl>
           </div>
         </div>
       </section>

@@ -30,15 +30,16 @@ function setYear() {
 function wireAvatarFallback() {
   const img = document.getElementById("profilePhoto");
   if (!img) return;
-  const avatar = img.closest(".avatar");
-  if (!avatar) return;
+  const container = img.closest(".hero-photo") || img.closest(".avatar");
+  if (!container) return;
 
   const initialSrc = img.currentSrc || img.getAttribute("src") || "";
   const originalSrc = img.getAttribute("src") || "";
   const placeholderSrc = "./assets/profile.svg";
 
   img.addEventListener("error", () => {
-    avatar.classList.add("avatar--fallback");
+    container.classList.add("hero-photo--fallback");
+    container.classList.add("avatar--fallback");
     const currentSrc = img.getAttribute("src") || "";
     if (currentSrc === originalSrc || currentSrc === initialSrc) {
       img.setAttribute("src", placeholderSrc);
@@ -46,7 +47,8 @@ function wireAvatarFallback() {
   });
 
   img.addEventListener("load", () => {
-    avatar.classList.remove("avatar--fallback");
+    container.classList.remove("hero-photo--fallback");
+    container.classList.remove("avatar--fallback");
   });
 }
 
