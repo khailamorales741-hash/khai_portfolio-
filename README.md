@@ -1,13 +1,14 @@
-## Responsive Portfolio
+## Khaila Camille Morales — Portfolio
 
-Mobile-first responsive portfolio site (HTML/CSS/JS) with light/dark theme toggle.
+Static portfolio site built with HTML/CSS/JS.
 
 ### Run locally
 
-Any static server works. For example, with Python:
+If you don't have Python installed, you can use Node:
 
 ```bash
-python -m http.server 5173
+npx --yes serve -l 5500 .
 ```
 
-Then open `http://localhost:5173`.
+Then open `http://localhost:5500`.
+

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520" role="img" aria-label="Profile placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#39d0ff"/>
+    </linearGradient>
+    <radialGradient id="r" cx="30%" cy="20%" r="80%">
+      <stop offset="0" stop-color="rgba(255,255,255,0.35)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="520" height="520" rx="120" fill="url(#g)"/>
+  <rect x="0" y="0" width="520" height="520" rx="120" fill="url(#r)"/>
+  <circle cx="260" cy="210" r="86" fill="rgba(255,255,255,0.22)"/>
+  <path d="M120 454c24-92 92-138 140-138s116 46 140 138" fill="rgba(255,255,255,0.22)"/>
+  <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle"
+        font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
+        font-size="132" font-weight="800" fill="rgba(255,255,255,0.92)" letter-spacing="-6">
+    KCM
+  </text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520" role="img" aria-label="Profile placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#39d0ff"/>
+    </linearGradient>
+    <radialGradient id="r" cx="30%" cy="20%" r="80%">
+      <stop offset="0" stop-color="rgba(255,255,255,0.35)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="rgba(0,0,0,0.28)"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="520" height="520" rx="120" fill="url(#g)"/>
+  <rect x="0" y="0" width="520" height="520" rx="120" fill="url(#r)"/>
+  <g filter="url(#shadow)">
+    <circle cx="260" cy="210" r="86" fill="rgba(255,255,255,0.22)"/>
+    <path d="M120 454c24-92 92-138 140-138s116 46 140 138" fill="rgba(255,255,255,0.22)"/>
+  </g>
+  <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle"
+        font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
+        font-size="132" font-weight="800" fill="rgba(255,255,255,0.92)" letter-spacing="-6">
+    YN
+  </text>
+</svg>
+

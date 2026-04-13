@@ -33,8 +33,16 @@ function wireAvatarFallback() {
   const avatar = img.closest(".avatar");
   if (!avatar) return;
 
+  const initialSrc = img.currentSrc || img.getAttribute("src") || "";
+  const originalSrc = img.getAttribute("src") || "";
+  const placeholderSrc = "./assets/profile.svg";
+
   img.addEventListener("error", () => {
     avatar.classList.add("avatar--fallback");
+    const currentSrc = img.getAttribute("src") || "";
+    if (currentSrc === originalSrc || currentSrc === initialSrc) {
+      img.setAttribute("src", placeholderSrc);
+    }
   });
 
   img.addEventListener("load", () => {
