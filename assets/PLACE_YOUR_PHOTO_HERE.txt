@@ -1,0 +1,9 @@
+Add your profile photo in this folder.
+
+Recommended:
+- Filename: profile.jpg
+- Path: assets/profile.jpg
+- Size: ~600x600 or bigger (square works best)
+
+Then refresh the page and it will appear in the profile card.
+

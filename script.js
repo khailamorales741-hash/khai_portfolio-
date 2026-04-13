@@ -27,7 +27,23 @@ function setYear() {
   if (year) year.textContent = String(new Date().getFullYear());
 }
 
+function wireAvatarFallback() {
+  const img = document.getElementById("profilePhoto");
+  if (!img) return;
+  const avatar = img.closest(".avatar");
+  if (!avatar) return;
+
+  img.addEventListener("error", () => {
+    avatar.classList.add("avatar--fallback");
+  });
+
+  img.addEventListener("load", () => {
+    avatar.classList.remove("avatar--fallback");
+  });
+}
+
 applyTheme(getPreferredTheme());
 wireThemeToggle();
 setYear();
+wireAvatarFallback();
 
